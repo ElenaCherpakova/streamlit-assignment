@@ -27,7 +27,7 @@ filtered_df = df[df['country'] == country_selected]
 
 st.subheader(f"{country_selected} GDP per Capita Over Time")
 line = px.line(filtered_df, x='year', y='gdpPercap', markers=True,
-               title="GDP per Capita Growth")  # Grouped bar chart
+               title="GDP per Capita Growth")
 st.plotly_chart(line)
 
 
